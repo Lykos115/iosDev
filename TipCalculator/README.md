@@ -2,9 +2,9 @@
 
 **Tip Calculator* is a tip calculator application for iOS.
 
-Submitted by: **Your Name**
+Submitted by: Francisco Herrera
 
-Time spent: **x** hours spent in total
+Time spent: 1 hours spent in total
 
 ## User Stories
 
@@ -29,9 +29,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://giphy.com/gifs/W3IHgxPZamoujS2lwE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Lykos115/iosDev/blob/master/TipCalculator/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 ## Notes
 
