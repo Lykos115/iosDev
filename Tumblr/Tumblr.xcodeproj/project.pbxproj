@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		067E0050233B02AE00C8CC6E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067E004F233B02AE00C8CC6E /* DetailViewController.swift */; };
 		068A1B6F2331DABD005A42B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068A1B6E2331DABD005A42B1 /* AppDelegate.swift */; };
 		068A1B742331DABD005A42B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068A1B722331DABD005A42B1 /* Main.storyboard */; };
 		068A1B762331DABD005A42B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068A1B752331DABD005A42B1 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		067E004F233B02AE00C8CC6E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		068A1B6B2331DABD005A42B1 /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068A1B6E2331DABD005A42B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068A1B732331DABD005A42B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				068A1B7A2331DABD005A42B1 /* Info.plist */,
 				068A1B9C2331DB5A005A42B1 /* PhotoViewController.swift */,
 				068A1B9E2331DD27005A42B1 /* ImgCell.swift */,
+				067E004F233B02AE00C8CC6E /* DetailViewController.swift */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -165,7 +168,6 @@
 				2ADE13091567D997259D9110 /* Pods-TumblrUITests.debug.xcconfig */,
 				63F7D09E8620397DA2FE35AD /* Pods-TumblrUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -393,6 +395,7 @@
 				068A1B6F2331DABD005A42B1 /* AppDelegate.swift in Sources */,
 				068A1B9D2331DB5A005A42B1 /* PhotoViewController.swift in Sources */,
 				068A1B9F2331DD27005A42B1 /* ImgCell.swift in Sources */,
+				067E0050233B02AE00C8CC6E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
