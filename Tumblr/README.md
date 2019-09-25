@@ -1,4 +1,7 @@
 # Tumblr-Feed
+##Tumblr Part 2
+
+<img src='./tumblr2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough'/>
 
 **Tumblr** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
