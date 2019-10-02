@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mZu-WC-tk9">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ipu-GO-GEP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ipu-GO-GEP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="162" id="Dk5-8j-FWI" customClass="MovieCell" customModule="flix" customModuleProvider="target">
@@ -59,6 +58,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ipu-GO-GEP" secondAttribute="trailing" id="APG-jq-zRS"/>
+                            <constraint firstAttribute="bottom" secondItem="ipu-GO-GEP" secondAttribute="bottom" id="PfQ-28-ald"/>
+                            <constraint firstItem="ipu-GO-GEP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="juC-cT-bYP"/>
+                            <constraint firstItem="ipu-GO-GEP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qEs-rw-qqv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="9JQ-aL-nOz"/>
@@ -139,11 +144,10 @@
                 <viewController id="kUl-tb-rXi" customClass="GridViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rQw-8G-bpF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wLF-aF-0Uc">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wLF-aF-0Uc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tgw-jH-hUb">
                                     <size key="itemSize" width="202" height="313"/>
@@ -174,6 +178,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wLF-aF-0Uc" firstAttribute="top" secondItem="rQw-8G-bpF" secondAttribute="topMargin" constant="-88" id="14L-U2-J5O"/>
+                            <constraint firstItem="wLF-aF-0Uc" firstAttribute="centerX" secondItem="rQw-8G-bpF" secondAttribute="centerX" id="7k6-Yz-juS"/>
+                            <constraint firstItem="wLF-aF-0Uc" firstAttribute="centerY" secondItem="rQw-8G-bpF" secondAttribute="centerY" id="UR0-1n-rFx"/>
+                            <constraint firstItem="wLF-aF-0Uc" firstAttribute="leading" secondItem="N4F-Sj-bKQ" secondAttribute="leading" id="bSY-eh-3Hu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="N4F-Sj-bKQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="H0E-m9-U2s"/>
