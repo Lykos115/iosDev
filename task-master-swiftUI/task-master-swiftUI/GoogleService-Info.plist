@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>955209665114-rb5j7maq9f0rosdgmah8gmgngkmjmrcv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.955209665114-rb5j7maq9f0rosdgmah8gmgngkmjmrcv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPVBm8unvjGU_MZgy-uAsT15v65HH7TF4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>955209665114</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Lyk-s.task-master-swiftUI</string>
+	<key>PROJECT_ID</key>
+	<string>taskmaster-60342</string>
+	<key>STORAGE_BUCKET</key>
+	<string>taskmaster-60342.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:955209665114:ios:d1583d009c9872d4ab6663</string>
+	<key>DATABASE_URL</key>
+	<string>https://taskmaster-60342.firebaseio.com</string>
+</dict>
+</plist>

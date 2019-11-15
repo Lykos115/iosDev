@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_task_master_swiftUI_task_master_swiftUIUITests : NSObject
+@end
+@implementation PodsDummy_Pods_task_master_swiftUI_task_master_swiftUIUITests
+@end

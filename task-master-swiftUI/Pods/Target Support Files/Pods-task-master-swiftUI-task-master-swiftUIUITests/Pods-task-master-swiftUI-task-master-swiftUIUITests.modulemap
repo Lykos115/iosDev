@@ -1,0 +1,6 @@
+framework module Pods_task_master_swiftUI_task_master_swiftUIUITests {
+  umbrella header "Pods-task-master-swiftUI-task-master-swiftUIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
