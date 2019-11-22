@@ -77,7 +77,7 @@ struct signUp: View {
 
     func signUp(display: String) {
         if !email.isEmpty && !password.isEmpty {
-            session.signUp(email: email, password: password, test: display) { (result, error) in
+            session.signUp(email: email, password: password) { (result, error) in //test: display
                 if error != nil {
                     print(error)
                 } else {

@@ -49,9 +49,8 @@ struct profileView: View {
                         //Using buttons to start document
                         Button(action:{
                             db.collection("Users").document(self.session.currUser!.uid).setData([
+//                                "Display Name": self.session.name!,//name does not persist through app refresh
                                 "Homework 1" : [
-                                    //Display name currently not working
-                                    "Display name" : self.session.name,
                                     "Points" : 10,
                                     "Type" : "Homework",
                                     "Added" : "10/22/19",
@@ -98,7 +97,8 @@ struct profileView: View {
                     Button(action:{
                         
                         // Using button to add to the existing document
-                        db.collection("Users").document(self.session.currUser!.uid).setData(["Lab 1":[
+                        db.collection("Users").document(self.session.currUser!.uid).setData([
+                            "Lab 1":[
                             "Points" : 5,
                             "Type" : "Lab",
                             "Added" : "10/22/19",
