@@ -29,14 +29,7 @@ struct skipLogIn: View {
                     Text(String(it.category))
                 }
             }
-            
-//            Text("for test")
             .navigationBarTitle("Assignment")
-//            .navigationBarItems(trailing:
-//                NavigationLink(destination: profileView()) {
-//                    Text("Profile")
-//
-//                })
             Spacer()
             HStack{
                 NavigationLink(destination:createAssignments()){
