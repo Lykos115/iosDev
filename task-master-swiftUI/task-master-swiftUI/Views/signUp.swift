@@ -23,6 +23,7 @@ struct signUp: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var confirmPassword: String = ""
+    @State var displayName: String = ""
     
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @EnvironmentObject var session: FirebaseSession
@@ -55,7 +56,8 @@ struct signUp: View {
             
             Button(action: {
                 if(self.password == self.confirmPassword){
-                    self.signUp(display: self.firstName)
+                    self.displayName = self.firstName + " " + self.lastName
+                    self.signUp(display: self.displayName)
                 }else{
                     print("Passwords do not match")
                 }
@@ -75,12 +77,13 @@ struct signUp: View {
         }
     }
 
-    func signUp(display: String) {
+    func signUp(display:String) {//display: String
         if !email.isEmpty && !password.isEmpty {
-            session.signUp(email: email, password: password) { (result, error) in //test: display
+            session.signUp(email: email, password: password, display: displayName) { (result, error) in //test: display
                 if error != nil {
                     print(error)
                 } else {
+//                    print(self.session.currUser?.displayName)
                     self.email = ""
                     self.password = ""
                 }

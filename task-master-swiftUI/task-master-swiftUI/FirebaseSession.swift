@@ -15,7 +15,7 @@ class FirebaseSession: ObservableObject {
     
     //MARK: Properties
     @Published var currUser: User?
-    @Published var name: String?
+    @Published var displayName: String?
     @Published var isLoggedIn: Bool?
 
 
@@ -24,7 +24,7 @@ class FirebaseSession: ObservableObject {
     func listen() {
         _ = Auth.auth().addStateDidChangeListener( { (auth, user) in
             if let user = user {
-                self.currUser = User(uid: user.uid, displayName: user.displayName, email: user.email)
+                self.currUser = User(uid: user.uid, displayName: self.displayName, email: user.email)
                 self.isLoggedIn = true
             } else {
                 self.isLoggedIn = false
@@ -44,8 +44,9 @@ class FirebaseSession: ObservableObject {
 
     }
     
-    func signUp(email: String, password: String, handler: @escaping AuthDataResultCallback) {//test: String,
-//        name = test
+    func signUp(email: String, password: String, display: String, handler: @escaping AuthDataResultCallback) {//test: String,
+        self.displayName = display
+        print(self.displayName)
         Auth.auth().createUser(withEmail: email, password: password, completion: handler)
         
     }

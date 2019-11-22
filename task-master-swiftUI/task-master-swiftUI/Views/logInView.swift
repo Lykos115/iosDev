@@ -66,6 +66,7 @@ struct logInView: View {
             if error != nil {
                 print("Error")
             } else {
+                print(self.session.currUser?.displayName)
                 self.username = ""
                 self.password = ""
             }

@@ -25,6 +25,7 @@ struct profileView: View {
     @State private var pressed = true; // invert colors
     @Environment(\.colorScheme) var colorScheme: ColorScheme//for light and dark mode
     @EnvironmentObject var session: FirebaseSession //DB session
+//    @ObservedObject var userObj : User
     
     var body: some View {
         //MARK: Main vertical stack
@@ -49,7 +50,7 @@ struct profileView: View {
                         //Using buttons to start document
                         Button(action:{
                             db.collection("Users").document(self.session.currUser!.uid).setData([
-//                                "Display Name": self.session.name!,//name does not persist through app refresh
+                                "Display Name": self.session.currUser?.displayName,
                                 "Homework 1" : [
                                     "Points" : 10,
                                     "Type" : "Homework",
